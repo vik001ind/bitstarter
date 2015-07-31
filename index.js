@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   response.send('Hello World121!')
   var fs = require('fs');
   var buf1 = fs.readFileSync("index.html")
-  console.log(buf1.toString('utf-8'))
+  response.send(buf1.toString('utf-8'))
 })
 
 app.listen(app.get('port'), function() {
