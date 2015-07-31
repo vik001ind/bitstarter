@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', function(request, response) {
 //  response.send('Hello World121!')
   var fs = require('fs');
-  var buf1 = fs.readFileSync("index.html")
+  var buf1 = fs.readFileSync("temp.html")
   response.send(buf1.toString('utf-8'))
 })
 
